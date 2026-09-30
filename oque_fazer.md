@@ -57,6 +57,7 @@ S6_R1_AT1/
 ├── atividade_de_apropriacao.html
 ├── atividade_de_aplicacao.html
 ├── desafio_profissional.html
+├── dicionario.md
 ├── oque_fazer.md
 └── imagens/
     ├── senai.svg
