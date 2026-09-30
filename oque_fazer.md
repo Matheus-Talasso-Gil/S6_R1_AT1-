@@ -1,6 +1,6 @@
-# Atividade de Apropriação
+# Atividade sobre imagens em HTML
 
-## Analise os códigos abaixo
+## Apropriação
 
 ### Código 1
 
@@ -8,12 +8,9 @@
 <img src="logo.png">
 ```
 
-**Pergunta:**
-Qual atributo está faltando?
+**Qual atributo está faltando?**
 
-**Resposta:** `alt`
-
----
+Falta o `alt`, que serve para descrever a imagem.
 
 ### Código 2
 
@@ -21,104 +18,77 @@ Qual atributo está faltando?
 <img src="logo.png" alt="Logotipo da empresa">
 ```
 
-**Pergunta:**
-Atende às boas práticas?
+**Atende às boas práticas?**
 
-**Resposta:** Sim.
+Sim, porque tem texto alternativo. Para deixar a descrição mais clara,
+podemos colocar o nome da empresa, como em `alt="Logotipo do SENAI"`.
 
----
+## Aplicação
 
-## Atividade de Aplicação
+A proposta é criar uma página institucional. Usei o SENAI como tema no
+arquivo `atividade_de_aplicacao.html`.
 
-## Desafio
+A página deve ter:
 
-Criar uma página institucional contendo:
+- Nome e descrição da instituição.
+- Logotipo e foto ilustrativa.
+- Texto alternativo adequado em cada imagem.
+- Imagens organizadas na pasta `imagens`.
 
-### Elementos obrigatórios
+## Desafio profissional
 
-* [x] Nome da empresa
-* [x] Descrição institucional
-* [x] Logotipo
-* [x] Foto ilustrativa
-* [x] Texto alternativo adequado
-* [x] Organização em pasta `imagens`
+O catálogo está em `desafio_profissional.html` e apresenta estas seções:
 
----
+- Quem Somos: uma breve apresentação do SENAI.
+- Serviços: desenvolvimento de sistemas, eletricista e formação profissional.
+- Contato: um link para o site oficial do SENAI.
 
-## Desafio Profissional
+Foram usados três arquivos de imagem: o logotipo e duas fotos dos cursos.
+Todas as imagens possuem `alt` e usam caminhos relativos, como
+`imagens/desenvolvimento.jpg`.
 
-Uma empresa deseja publicar um catálogo de serviços online.
+Um caminho relativo indica onde o arquivo está a partir da página HTML.
+Por isso, a pasta `imagens` deve acompanhar as páginas ao copiar o projeto.
 
-Desenvolva uma página contendo:
-
-### Seções
-
-* Quem Somos
-* Serviços
-* Contato
-
-### Recursos obrigatórios
-
-* [x] Mínimo de 3 imagens
-* [x] Utilização de caminhos relativos
-* [x] Texto alternativo em todas as imagens
-* [x] Organização profissional dos arquivos
-
-### Estrutura sugerida
+## Arquivos do projeto
 
 ```text
-catalogo/
-│
-├── index.html
-│
+S6_R1_AT1/
+├── atividade_de_apropriacao.html
+├── atividade_de_aplicacao.html
+├── desafio_profissional.html
+├── oque_fazer.md
 └── imagens/
-    ├── logo.png
-    ├── servico1.jpg
-    └── servico2.jpg
+    ├── senai.svg
+    ├── desenvolvimento.jpg
+    └── eletricista.jpg
 ```
 
----
+Cada atividade tem seu próprio HTML e usa a mesma pasta de imagens.
+Os nomes dos arquivos estão em letras minúsculas, sem espaços ou acentos.
 
-## Avaliação por Competências
-
-| Capacidade                     | Evidência                      |
-| ------------------------------ | ------------------------------ |
-| Inserir imagens corretamente   | Imagens exibidas               |
-| Utilizar caminhos relativos    | Arquivos localizados           |
-| Aplicar acessibilidade         | Uso adequado do atributo `alt` |
-| Organizar estrutura de projeto | Pastas organizadas             |
-| Aplicar boas práticas          | Nomenclatura correta           |
-
----
-
-## Checklist de Avaliação
+## Checklist
 
 | Critério                                  | Sim | Não |
 | ----------------------------------------- | :-: | :-: |
-| Inseriu imagens corretamente              |  ☐  |  ☐  |
-| Utilizou caminhos relativos               |  ☐  |  ☐  |
-| Aplicou atributo `alt`                    |  ☐  |  ☐  |
-| Organizou as imagens em pastas            |  ☐  |  ☐  |
-| Utilizou nomenclatura adequada            |  ☐  |  ☐  |
-| Demonstrou preocupação com acessibilidade |  ☐  |  ☐  |
+| Inseriu imagens corretamente              | ☑   | ☐   |
+| Utilizou caminhos relativos               | ☑   | ☐   |
+| Aplicou atributo `alt`                    | ☑   | ☐   |
+| Organizou as imagens em pastas            | ☑   | ☐   |
+| Utilizou nomenclatura adequada            | ☑   | ☐   |
+| Demonstrou preocupação com acessibilidade | ☑   | ☐   |
 
----
+## Revisão por um colega
 
-## Estratégias de Feedback
-
-## Avaliação por Pares
-
-Os estudantes devem verificar:
-
-* As imagens carregam corretamente?
-* Existe texto alternativo?
-* Os nomes dos arquivos seguem boas práticas?
-* A estrutura de pastas está organizada?
-
----
+- As imagens carregam no navegador?
+- Os textos alternativos descrevem o que aparece nas imagens?
+- Os nomes dos arquivos são claros?
+- As páginas e a pasta de imagens estão organizadas?
 
 ## Autoavaliação
 
-### Pergunta norteadora
+**Dá para entender a página sem ver as imagens?**
 
-> Se a imagem não carregar ou se o usuário utilizar um leitor de tela, ele conseguirá compreender o conteúdo da página?
+Os títulos e os parágrafos explicam a instituição e os serviços. O `alt`
+oferece uma descrição da imagem quando ela não carrega ou quando alguém usa
+um leitor de tela. Por isso, a descrição precisa combinar com a imagem.
